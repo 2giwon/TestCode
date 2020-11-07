@@ -38,6 +38,12 @@ dependencies {
     implementation Dependencies.CORE_KTX
     implementation Dependencies.MATERIAL
     implementation Dependencies.CONSTRAINT_LAYOUT
+    implementation Dependencies.SERIALIZATION_JSON
+
+    implementation NetworkDependencies.RETROFIT
+    implementation NetworkDependencies.RXJAVA_ADAPTER
+    implementation NetworkDependencies.CONVERTER_GSON
+    implementation NetworkDependencies.LOGGING_INTERCEPTOR
 
     testImplementation TestDependencies.JUNIT_JUPITER_API
     testRuntimeOnly TestDependencies.JUNIT_JUPITER_ENGINE
