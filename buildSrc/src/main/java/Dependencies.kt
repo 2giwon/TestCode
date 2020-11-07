@@ -35,3 +35,13 @@ object TestDependencies {
     const val JUNIT_JUPITER_ENGINE = "org.junit.jupiter:junit-jupiter-engine:$JUNIT_VERSION"
     const val ASSERTJ_CORE = "org.assertj:assertj-core:3.18.0"
 }
+
+object NetworkDependencies {
+    private const val RETROFIT_VER = "2.7.2"
+
+    const val RETROFIT = "com.squareup.retrofit2:retrofit:$RETROFIT_VER"
+    const val CONVERTER_GSON = "com.squareup.retrofit2:converter-gson:$RETROFIT_VER"
+    const val RXJAVA_ADAPTER = "com.squareup.retrofit2:adapter-rxjava2:$RETROFIT_VER"
+
+    const val LOGGING_INTERCEPTOR = "com.squareup.okhttp3:logging-interceptor:3.14.2"
+}
