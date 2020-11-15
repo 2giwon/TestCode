@@ -58,6 +58,7 @@ dependencies {
 
     testImplementation TestDependencies.JUNIT_JUPITER_API
     testRuntimeOnly TestDependencies.JUNIT_JUPITER_ENGINE
+    testImplementation TestDependencies.JUNIT_JUPITER_PARAMS
     testImplementation TestDependencies.ASSERTJ_CORE
     testImplementation TestDependencies.MOCKK
 
