@@ -25,10 +25,10 @@ internal class RandomUserRemoteDataSourceImplTest {
 
     @Test
     fun `랜덤으로 다수의 유저를 가져옵니다`() = runBlocking {
-        randomUserRemoteDataSource.getRandomUsers()
+        randomUserRemoteDataSource.getRandomUsers(10)
 
         coVerify {
-            randomUserService.getRandomUsers()
+            randomUserService.getRandomUsers(10)
         }
     }
 }
