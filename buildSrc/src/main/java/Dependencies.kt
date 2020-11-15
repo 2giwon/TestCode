@@ -29,6 +29,8 @@ object Dependencies {
     const val MATERIAL = "com.google.android.material:material:1.1.0"
     const val CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout:2.0.1"
 
+    const val COROUTINES = "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1"
+
     const val HILT_ANDROID = "com.google.dagger:hilt-android:$HILT_VER"
     const val HILT_ANDROID_COMPILER = "com.google.dagger:hilt-android-compiler:$HILT_VER"
 

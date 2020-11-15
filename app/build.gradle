@@ -45,6 +45,8 @@ dependencies {
     kapt Dependencies.HILT_ANDROID_COMPILER
     kapt Dependencies.HILT_COMPILER
 
+    implementation Dependencies.COROUTINES
+
     implementation NetworkDependencies.RETROFIT
     implementation NetworkDependencies.RXJAVA_ADAPTER
     implementation NetworkDependencies.CONVERTER_GSON
