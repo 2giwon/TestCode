@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'de.mannodermaus.android-junit5'
-apply plugin: 'org.jetbrains.kotlin.plugin.serialization'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion AndroidConfig.COMPILE_SDK
@@ -38,15 +38,19 @@ dependencies {
     implementation Dependencies.CORE_KTX
     implementation Dependencies.MATERIAL
     implementation Dependencies.CONSTRAINT_LAYOUT
-    implementation Dependencies.SERIALIZATION_JSON
 
     implementation NetworkDependencies.RETROFIT
     implementation NetworkDependencies.RXJAVA_ADAPTER
     implementation NetworkDependencies.CONVERTER_GSON
     implementation NetworkDependencies.LOGGING_INTERCEPTOR
 
+    implementation Dependencies.ROOM_RUNTIME
+    kapt Dependencies.ROOM_COMPILER
+    implementation Dependencies.ROOM_KTX
+
     testImplementation TestDependencies.JUNIT_JUPITER_API
     testRuntimeOnly TestDependencies.JUNIT_JUPITER_ENGINE
     testImplementation TestDependencies.ASSERTJ_CORE
+    testImplementation TestDependencies.MOCKK
 
 }

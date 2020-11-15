@@ -1,9 +1,7 @@
 package com.egiwon.randomusers.data.entity
 
 import com.google.gson.annotations.SerializedName
-import kotlinx.serialization.Serializable
 
-@Serializable
 data class Registered(
     @SerializedName("age")
     val age: Int = 0,

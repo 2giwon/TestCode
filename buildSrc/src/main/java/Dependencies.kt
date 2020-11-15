@@ -1,5 +1,6 @@
 object Version {
     const val KOTLIN_VER = "1.4.0"
+    const val ROOM_VER = "2.2.5"
 }
 
 object ProjectConfig {
@@ -7,8 +8,6 @@ object ProjectConfig {
     const val KOTLIN_GRADLE_PLUGIN =
         "org.jetbrains.kotlin:kotlin-gradle-plugin:${Version.KOTLIN_VER}"
     const val ANDROID_JUNIT5 = "de.mannodermaus.gradle.plugins:android-junit5:1.6.2.0"
-    const val KOTLIN_SERIALIZATION =
-        "org.jetbrains.kotlin:kotlin-serialization:${Version.KOTLIN_VER}"
 }
 
 object AndroidConfig {
@@ -25,7 +24,10 @@ object Dependencies {
     const val CORE_KTX = "androidx.core:core-ktx:1.3.0"
     const val MATERIAL = "com.google.android.material:material:1.1.0"
     const val CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout:2.0.1"
-    const val SERIALIZATION_JSON = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.0.1"
+
+    const val ROOM_RUNTIME = "androidx.room:room-runtime:${Version.ROOM_VER}"
+    const val ROOM_COMPILER = "androidx.room:room-compiler:${Version.ROOM_VER}"
+    const val ROOM_KTX = "androidx.room:room-ktx:${Version.ROOM_VER}"
 }
 
 object TestDependencies {
@@ -34,6 +36,9 @@ object TestDependencies {
     const val JUNIT_JUPITER_API = "org.junit.jupiter:junit-jupiter-api:$JUNIT_VERSION"
     const val JUNIT_JUPITER_ENGINE = "org.junit.jupiter:junit-jupiter-engine:$JUNIT_VERSION"
     const val ASSERTJ_CORE = "org.assertj:assertj-core:3.18.0"
+
+    const val MOCKK = "io.mockk:mockk:1.10.2"
+    const val ROOM_TEST = "androidx.room:room-testing:${Version.ROOM_VER}"
 }
 
 object NetworkDependencies {
