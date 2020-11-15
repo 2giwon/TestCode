@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'de.mannodermaus.android-junit5'
+apply plugin: 'dagger.hilt.android.plugin'
 apply plugin: 'kotlin-kapt'
 
 android {
@@ -38,6 +39,11 @@ dependencies {
     implementation Dependencies.CORE_KTX
     implementation Dependencies.MATERIAL
     implementation Dependencies.CONSTRAINT_LAYOUT
+
+    implementation Dependencies.HILT_ANDROID
+    implementation Dependencies.DAGGER_HILT_LIFECYCLE_VM
+    kapt Dependencies.HILT_ANDROID_COMPILER
+    kapt Dependencies.HILT_COMPILER
 
     implementation NetworkDependencies.RETROFIT
     implementation NetworkDependencies.RXJAVA_ADAPTER
