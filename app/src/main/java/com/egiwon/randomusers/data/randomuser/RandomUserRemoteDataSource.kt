@@ -5,5 +5,5 @@ import com.egiwon.randomusers.data.entity.RandomUserResponse
 
 interface RandomUserRemoteDataSource {
 
-    suspend fun getRandomUsers(): Result<RandomUserResponse>
+    suspend fun getRandomUsers(numUser: Int): Result<RandomUserResponse>
 }

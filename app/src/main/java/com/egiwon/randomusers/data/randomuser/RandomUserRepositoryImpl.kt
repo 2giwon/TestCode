@@ -9,8 +9,8 @@ class RandomUserRepositoryImpl @Inject constructor(
     private val randomUserRemoteDataSource: RandomUserRemoteDataSource
 ) : RandomUserRepository {
 
-    override suspend fun getRandomUsers(): Result<RandomUserResponse> =
-        randomUserRemoteDataSource.getRandomUsers()
+    override suspend fun getRandomUsers(numUser: Int): Result<RandomUserResponse> =
+        randomUserRemoteDataSource.getRandomUsers(numUser)
 
 
 }
