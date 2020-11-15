@@ -1,4 +1,4 @@
-package com.egiwon.randomusers.mock.entity
+package com.egiwon.randomusers.mock.data.entity
 
 object Mock {
     const val MOCK_USER_DATA =
