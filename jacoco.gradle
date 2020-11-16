@@ -18,6 +18,8 @@ task jacocoTestReport(type: JacocoReport, dependsOn: 'testDebugUnitTest') {
                     '**/BuildConfig.*',
                     '**/Manifest*.*',
                     'com/android/**/*.class',
+                    '**/*Activity*.*',
+                    '**/Result.*/'
             ]
     )
     executionData.from = files("$buildDir/jacoco/testDebugUnitTest.exec")
