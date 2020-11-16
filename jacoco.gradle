@@ -6,7 +6,7 @@ jacoco {
 
 task jacocoTestReport(type: JacocoReport, dependsOn: 'testDebugUnitTest') {
 
-    def coverageSourceDirs = ['src/main/kotlin']
+    def coverageSourceDirs = ['src/main/java']
     additionalClassDirs.from = files(coverageSourceDirs)
     sourceDirectories.from = files(coverageSourceDirs)
 
