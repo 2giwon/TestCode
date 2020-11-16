@@ -34,5 +34,5 @@ jobs:
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1.0.14
         with:
-        token: 5ee04a52-295d-4f77-8312-22048f2f981b
+        token: ${{ secrets.CODECOV_TOKEN }}
         file: ./app/build/reports/jacoco/jacocoTestReport/jacocoTestReport.xml
