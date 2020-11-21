@@ -48,3 +48,10 @@ jobs:
           fields: repo,message,commit,author,action,eventName,ref,workflow,job,took 
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          
+      - name: Slack File Upload
+        uses: adrey/slack-file-upload-action@1.0.5
+        with:
+          token: ${{ secrets.SLACK_WEBHOOK_URL }}
+          path: "TestCode/build/outputs/apk/debug/app-debug.apk"
+          channel: test-study
