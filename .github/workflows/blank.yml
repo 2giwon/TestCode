@@ -41,7 +41,7 @@ jobs:
           file: ./app/build/reports/jacoco/jacocoTestReport/jacocoTestReport.xml
 
       - name: action-slack
-          uses: 8398a7/action-slack@v2.6.0
+          uses: 2giwon/action-slack@v3
           with:
             status: ${{job.status}}
             author_name: TestCI
