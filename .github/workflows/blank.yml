@@ -43,7 +43,7 @@ jobs:
       - name: Slack File Upload
         uses: adrey/slack-file-upload-action@1.0.5
         with:
-          token: ${{ secrets.SLACK_WEBHOOK_URL }}
+          token: ${{ xoxb-660215133270-1516312843701-caMjRFVEZlhnzmK5S0RkzZpC }}
           path: ./app/build/outputs/apk/debug/app-debug.apk
           channel: test-study
 
