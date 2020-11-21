@@ -41,10 +41,7 @@ jobs:
           file: ./app/build/reports/jacoco/jacocoTestReport/jacocoTestReport.xml
 
       - name: action-slack
-          uses: 2giwon/test-study@v3
-          with:
-            status: ${{job.status}}
-            author_name: TestCI
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # required
-            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # required
+        uses: 8398a7/action-slack@v3.5.3
+        with:
+          status: ${{job.status}}
+          author_name: TestCI
